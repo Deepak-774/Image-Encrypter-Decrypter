@@ -65,13 +65,10 @@ python main.py
 ## Notes
 
 - PNG is recommended because it is lossless.
-- Images created with older versions of the app may not decode correctly after format changes.
+
 
 ## Project Structure
 
 - `main.py` — GUI and user flow
 - `functions.py` — encryption/decryption + embedding/extraction logic
 
-## License
-
-Add a license if you plan to make this public on GitHub.
