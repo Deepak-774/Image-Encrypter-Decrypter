@@ -1,6 +1,6 @@
 import tkinter as tk
 import tkinterdnd2 as tkdnd
-from tkinter import filedialog
+from tkinter import filedialog, messagebox
 from functions import encrypt_message, decrypt_without_key, decrypt_with_key
 
 current_decrypt_image = ""
@@ -287,7 +287,7 @@ def show_encrypt_dialog(image_path):
                 show_popup("Error", str(e), kind="error")
                 return
 
-            show_popup("Success", "Image encrypted successfully!", kind="success")
+            messagebox.showinfo("Success", "Image encrypted successfully!")
             dialog.destroy()
 
     encrypt_button = make_button(dialog, "Encrypt", encrypt_btn_click, kind="primary", width=18)
